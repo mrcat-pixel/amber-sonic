@@ -28,7 +28,17 @@
 ; Levels objects data
 ; ===========================================================================
 
+		include "Objects/Breakable Wall/Breakable Wall.asm"
+		include "Objects/Foreground Plant/Foreground Plant.asm"
+		include "Objects/Floating Platform/Floating Platform.asm"
+		include "Objects/Swinging Platform/Swinging Platform.asm"
+		include "Objects/Vine/GiantRideVine.asm"
+		include "Objects/Vine/RideVine.asm"
+		include "Objects/Still Sprites/Still Sprites.asm"
 
+		include "Objects/Chopper/Chopper.asm"
+		include "Objects/Moto Bug/Moto Bug.asm"
+		include "Objects/Caterkiller Jr/Caterkiller Jr.asm"
 
 ; ===========================================================================
 ; Bosses objects data

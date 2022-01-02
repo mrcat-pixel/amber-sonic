@@ -109,6 +109,7 @@ Camera_Y_pos_mask:					ds.w 1					; Either $7F0 or $FF0
 Layout_row_index_mask:				ds.w 1					; Either $3C or $7C
 Plane_buffer_2_addr:					ds.l 1					; The address of the second plane buffer to process, if applicable
 Screen_shaking_flag:					ds.l 1					; Activates screen shaking code (if existent) in layer deformation routine
+Vine_Acceleration:					ds.w 1
 Camera_RAM_End
 
 Ring_start_addr_ROM:				ds.l 1					; Address in the ring layout of the first ring whose X position is >= camera X position - 8
@@ -400,9 +401,6 @@ Ring_spill_anim_accum:				ds.b 1
 									ds.b 1					; Unused
 Oscillating_variables_End
 
-Current_RAM_start					!org $FEF0				; Unused data
-Current_RAM_end
-
 System_stack_size					ds.b $100				; ~$100 bytes ; this is the top of the stack, it grows downwards($FEF0-$FFF0)
 System_stack:
 V_int_jump:							ds.w 1					; 6 bytes ; contains an instruction to jump to the V-int handler
@@ -414,7 +412,7 @@ Checksum_string:						ds.l 1					; set to 'INIT' once the checksum routine has r
 		fatal "The RAM variable declarations are too large by $\{*} bytes."
 	endif
 	if MOMPASS=1
-		message "The current RAM available $\{Current_RAM_end-Current_RAM_start} bytes."
+		message "The current RAM available $\{0-*} bytes."
 	endif
 
 	dephase		; Stop pretending

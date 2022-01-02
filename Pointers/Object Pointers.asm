@@ -9,14 +9,14 @@ Obj_Index:
 		dc.l DeleteObject						; $03
 		dc.l DeleteObject						; $04
 		dc.l DeleteObject						; $05
-		dc.l DeleteObject						; $06
+		dc.l Obj_AIZRideVine					; $06
 		dc.l Obj_Spring						; $07
 		dc.l Obj_Spikes						; $08
 		dc.l DeleteObject						; $09
 		dc.l DeleteObject						; $0A
 		dc.l DeleteObject						; $0B
-		dc.l DeleteObject						; $0C
-		dc.l DeleteObject						; $0D
+		dc.l Obj_AIZGiantRideVine				; $0C
+		dc.l Obj_BreakableWall				; $0D
 		dc.l DeleteObject						; $0E
 		dc.l DeleteObject						; $0F
 		dc.l DeleteObject						; $10
@@ -26,10 +26,10 @@ Obj_Index:
 		dc.l DeleteObject						; $14
 		dc.l DeleteObject						; $15
 		dc.l DeleteObject						; $16
-		dc.l DeleteObject						; $17
-		dc.l DeleteObject						; $18
-		dc.l DeleteObject						; $19
-		dc.l DeleteObject						; $1A
+		dc.l Obj_SwingingPlatform				; $17
+		dc.l Obj_Chopper						; $18
+		dc.l Obj_MotoBug						; $19
+		dc.l Obj_CaterKillerJr					; $1A
 		dc.l DeleteObject						; $1B
 		dc.l DeleteObject						; $1C
 		dc.l DeleteObject						; $1D
@@ -50,13 +50,13 @@ Obj_Index:
 		dc.l DeleteObject						; $2C
 		dc.l DeleteObject						; $2D
 		dc.l DeleteObject						; $2E
-		dc.l DeleteObject						; $2F
+		dc.l Obj_StillSprite					; $2F
 		dc.l DeleteObject						; $30
 		dc.l DeleteObject						; $31
 		dc.l DeleteObject						; $32
 		dc.l Obj_Button						; $33
 		dc.l Obj_StarPost						; $34
-		dc.l DeleteObject						; $35
+		dc.l Obj_ForegroundPlant				; $35
 		dc.l DeleteObject						; $36
 		dc.l DeleteObject						; $37
 		dc.l DeleteObject						; $38

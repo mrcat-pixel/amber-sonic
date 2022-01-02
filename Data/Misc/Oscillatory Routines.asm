@@ -42,6 +42,7 @@ SynchroAnimate:
 		subq.b	#1,(Ring_spill_anim_counter).w
 
 .SyncEnd:
+		addi.w	#$180,(Vine_Acceleration).w
 		rts
 ; End of function SynchroAnimate
 ; ---------------------------------------------------------------------------

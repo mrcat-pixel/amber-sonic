@@ -41,6 +41,7 @@ PLC_Main2_End
 ; ===========================================================================
 
 PLC1_DEZ1_Misc: plrlistheader
+		plreq $443, ArtKosM_SwingPlatform					; Swing Platform
 PLC1_DEZ1_Misc_End
 
 ; ===========================================================================
@@ -48,6 +49,7 @@ PLC1_DEZ1_Misc_End
 ; ===========================================================================
 
 PLC2_DEZ1_Enemy: plrlistheader
+		plreq $55F, ArtKosM_CaterkillerJr					; Caterkiller Jr
 PLC2_DEZ1_Enemy_End
 
 ; ===========================================================================

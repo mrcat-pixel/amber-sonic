@@ -72,3 +72,13 @@ ArtKosM_DEZTitleCard:			binclude "Objects/Title Card/KosinskiM Art/Levels/DEZ - 
 
 ArtKosM_RobotnikShip:			binclude "Objects/Robotnik/KosinskiM Art/Robotnik Ship.bin"
 	even
+ArtKosM_Chopper:				binclude	"Objects/Chopper/KosinskiM Art/Enemy Chopper.bin"
+	even
+ArtKosM_Motobug:				binclude	"Objects/Moto Bug/KosinskiM Art/Enemy Motobug.bin"
+	even
+ArtKosM_CaterkillerJr:			binclude	"Objects/Caterkiller Jr/KosinskiM Art/Caterkiller Jr.bin"
+	even
+ArtKosM_SwingPlatform:			binclude	"Objects/Swinging Platform/KosinskiM Art/GHZ Swinging Platform.bin"
+	even
+ArtKosM_SwingVine:				binclude	"Objects/Vine/KosinskiM Art/Swing Vine.bin"
+	even

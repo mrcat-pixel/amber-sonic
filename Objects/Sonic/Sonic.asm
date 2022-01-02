@@ -2188,7 +2188,7 @@ sub_125E0:
 ; =============== S U B R O U T I N E =======================================
 
 Animate_Sonic:
-		lea	AniSonic(pc),a1
+		lea	(AniSonic).l,a1
 		moveq	#0,d0
 		move.b	anim(a0),d0
 		cmp.b	prev_anim(a0),d0
@@ -2297,10 +2297,10 @@ loc_12700:
 		add.w	d2,d2
 
 loc_1270A:
-		lea	SonAni_Run(pc),a1 	; use running	animation
+		lea	(SonAni_Run).l,a1 	; use running	animation
 		cmpi.w	#$600,d2
 		bcc.s	loc_12724
-		lea	SonAni_Walk(pc),a1 	; use walking animation
+		lea	(SonAni_Walk).l,a1 	; use walking animation
 		add.b	d0,d0
 
 loc_12724:
@@ -2549,10 +2549,10 @@ loc_12A2A:
 
 loc_12A4C:
 		add.w	(HScroll_Shift).w,d2
-		lea	SonAni_Roll2(pc),a1
+		lea	(SonAni_Roll2).l,a1
 		cmpi.w	#$600,d2
 		bcc.s	loc_12A5E
-		lea	SonAni_Roll(pc),a1
+		lea	(SonAni_Roll).l,a1
 
 loc_12A5E:
 		neg.w	d2
@@ -2581,7 +2581,7 @@ loc_12A82:
 loc_12A8A:
 		lsr.w	#6,d2
 		move.b	d2,anim_frame_timer(a0)
-		lea	SonAni_Push(pc),a1
+		lea	(SonAni_Push).l,a1
 		bra.w	SAnim_Do2
 ; End of function Animate_Sonic
 
